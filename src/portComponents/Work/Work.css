@@ -1,0 +1,98 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.SubHeading{ 
+
+    text-align: center; 
+    font-family: 'Josefin Sans', sans-serif;
+    color: #4C4C4C; 
+    border-bottom: 1px solid #888888 ;
+    font-size: 23px;
+    line-height: 40px;  
+    padding-top: 3px;
+    width: 100%; 
+    overflow: hidden; 
+    margin-bottom: 3px;
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    /* margin-left: 50px;
+    margin-right: 100px; */
+    
+ }
+
+.WGallery{
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    column-gap: 30px;
+
+   
+    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); 
+    column-gap: 30px; */
+
+
+}
+
+.Cover{ 
+
+    /* display: flex; 
+    width: 300px; */ 
+    /* margin-bottom: 30px; */
+    margin-top: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #4c4c4c; 
+    
+} 
+
+.coupleWrap{ 
+
+    display: flex; 
+    /* width: 300px; */
+    min-height: 300px;
+} 
+
+.VertText {  
+    position: relative;
+    text-align:center; 
+    padding-top: 50px;
+   
+}
+
+.VertText h3{  
+    
+   
+     bottom: 0;
+     font-family: 'Josefin Sans', sans-serif;
+     color: #4c4c4c;
+     writing-mode: vertical-lr;
+     transform: rotate(180deg);
+     text-align: justify;
+     letter-spacing: 2px;
+   
+ 
+
+}
+
+.coupleWrap img{ 
+
+    min-width: 200px;
+    width: 100%; 
+    min-height: 250px; 
+    height: 100%;
+    object-fit: cover;
+} 
+
+.GBride h3{ 
+ 
+    font-size: 20px; 
+    line-height: 27px;
+    padding-top: 5px;
+   
+}

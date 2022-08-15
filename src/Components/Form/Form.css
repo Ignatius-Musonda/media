@@ -1,0 +1,48 @@
+
+
+.formContainer{ 
+
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.formField{ 
+
+    border: none;
+    border-bottom: 1px black solid;
+}
+
+.formField:focus{ 
+
+    border: none;
+    /* border-bottom: 1px black solid; */
+} 
+
+.topEntry{ 
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  
+    column-gap: 20px;
+} 
+
+.formMesssage{ 
+
+    width: 100%;
+    height: 200px;
+}  
+
+.conButton{
+
+    display: flex;
+    width: 100%;
+    justify-content:right;
+    align-items: center;
+    padding-left: 600px;
+}
+.contBtn{ 
+
+    border: none; 
+   
+    
+}

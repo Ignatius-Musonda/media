@@ -1,0 +1,84 @@
+
+.Heading{ 
+
+    background-color: chocolate; 
+    height: 50vh;
+} 
+
+
+.Wbar {  
+    position: fixed; 
+    top: 0;  
+    left: 0;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    /* position: fixed; */
+} 
+
+.WbarOne{ 
+  
+    display: flex; 
+    align-items: center; 
+  
+}  
+         
+.NavItemi{ 
+
+     margin-right: 10px;
+     cursor: pointer; 
+     font: 18px;
+     font-weight: 400; 
+     font-family: 'Josefin Sans', sans-serif;
+     letter-spacing: 0.2rem;
+
+}
+.NavItem{ 
+
+   
+    cursor: pointer; 
+    font-weight: 350; 
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.WbarTwo{ 
+  
+    display: flex;  
+    flex-direction: row;
+    align-items: center; 
+   
+
+}   
+
+.TopList { 
+
+    display: flex; 
+}
+
+
+
+.TopList li{ 
+
+    display: flex; 
+    
+    list-style: none;
+    cursor: pointer;  
+    margin-right: 0.2rem;
+}  
+
+
+.ListItem{ 
+
+    /* margin-right: 10px;  */
+    font-weight: 300; 
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif; 
+}  
+
+.Overhead {  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}

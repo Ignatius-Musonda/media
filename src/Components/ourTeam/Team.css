@@ -1,0 +1,157 @@
+
+*{
+    box-sizing: border-box; 
+
+}
+
+.MeetUs{ 
+    position: relative;
+    background-color: #f8f6f5;
+    height:100vh;
+    /* display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));  */
+    width:100%;
+
+}
+
+.TContainer{
+ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+
+
+} 
+
+.Cardsss{ 
+
+    position: relative;
+    width: 100%;
+    padding: 50px 20px; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    column-gap: 10px;
+   
+    /* width: 300px; */
+} 
+
+
+
+.CardHolder{ 
+
+    /* display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));  */
+
+
+    /* display: flex;  */
+    position: relative;
+    width: 100%;
+/* height: 300px; */
+}  
+
+.ImageHolder{ 
+
+    position: relative;
+}
+.overlays{ 
+  
+    position: absolute; 
+    top: 3px; 
+    right: 0; 
+    bottom: 0;
+    left: 0; 
+    background-color: #f8f6f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: all 1.4s ease;
+    z-index: 1;
+
+} 
+
+.overlays:hover{ 
+    top: 20px; 
+    right: 20px; 
+    bottom: 20px;
+    left: 20px; 
+    opacity: 1;
+    transform: all 0.4s ease;
+
+}
+
+.CardHolder img{ 
+    width: 100%;  
+    min-height: 300px;
+    object-fit: cover; 
+    transition: 400ms ease-in-out;
+}   
+
+.ImageText{ 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+.TContainer h3{ 
+
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 40.5px; 
+    color: #4C4C4C;
+}
+
+.TContainer h1{ 
+    /* line-height: 37.7px;  */  
+
+    font-family: 'Josefin Sans', sans-serif; 
+     font-size: 29px;  
+     font-weight:700;
+     line-height: 37.7px; 
+     letter-spacing: 3.77px;
+     color: #4c4c4c;
+
+   
+} 
+
+.ImageText p{ 
+
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 300;
+    /* letter-spacing: 3px; */
+    /* line-height: 30px;   */
+    color: #4C4C4C;
+}
+
+
+
+.image-gallery .image-box .overlay{ 
+
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+    left: 0; 
+    background-color: #fafafaf2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: all 0.4s ease;
+    z-index: 1;
+  
+  } 
+  
+  .image-gallery .image-box:hover .overlay{ 
+  
+     top: 20px; 
+     right: 20px; 
+     bottom: 20px;
+     left: 20px; 
+     opacity: 1;
+  
+  } 

@@ -1,0 +1,349 @@
+
+*{ 
+
+    box-sizing: border-box;  
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+   
+
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.text-link{ 
+    text-decoration: none;
+    color: inherit;
+   
+ }  
+
+
+.Heading1{ 
+
+    position: relative; 
+    padding-top: 20px;
+
+
+    /* height: 60vh; */
+    justify-content: center;  
+    
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 20px; 
+    /* background-color: red; */
+    color: black;
+    width: 100%;
+    /* height: 100%; */
+    
+   
+} 
+
+.Heading1 h1{ 
+    
+    /* font-family: 'Roboto', sans-serif;  */
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 130px;  
+    font-weight: 700;
+    margin-top: 0; 
+    margin-bottom: 0; 
+    letter-spacing: 1rem;
+   
+
+}
+
+
+.Heading1 .Wbar {  
+    position: relative; 
+    /* top: 0;  
+    left: 0;  */
+    width: 100%; 
+    padding-top: 40px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;   
+    
+} 
+
+.WbarOne{ 
+  
+    display: flex; 
+    align-items: center;  
+    margin-left: 20px;
+  
+}  
+         
+.NavItemi{ 
+
+     margin-right: 20px;
+     cursor: pointer; 
+     font-family: 'Josefin Sans', sans-serif; 
+     font: 14px;
+     font-weight: 700; 
+     /* font-family: 'Roboto', sans-serif; */
+    
+     letter-spacing: 0.2rem;
+
+}
+.NavItem{ 
+
+   
+    cursor: pointer; 
+    font-weight: 350; 
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif; 
+
+}
+
+.WbarTwo{ 
+  
+    display: flex;  
+    flex-direction: row;
+    align-items: center;  
+    /* margin-right: 50px; */
+   
+
+}   
+
+.TopList { 
+
+    display: flex; 
+}
+
+
+
+/* .TopList li{ 
+
+    
+    
+    list-style: none;
+    cursor: pointer;  
+    margin-right: 0.2rem;
+}   */
+
+.TopList li:hover .Drop-down { 
+
+   visibility:visible;
+   transition: all 3s ease;
+
+}  
+
+
+.ListItem{ 
+
+    position: relative;
+    padding-right: 14px;
+    font-weight: 300; 
+    cursor: pointer;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif; 
+}  
+
+
+
+
+.Drop-down{ 
+    
+    position: absolute;
+    /* padding: auto; */
+    top: 20px;
+    font-size: 18px;
+    width: 180px;
+    visibility:hidden;
+    /* display: none; */
+    padding: 10px 5px;
+    cursor: pointer;
+    background-color: black;
+}
+
+
+.Drop-down:hover{ 
+    
+    /* position: absolute;
+    top:30px;  */
+    visibility:visible;
+    cursor: pointer;
+    
+}
+
+
+
+@media screen and (max-width: 600px){  
+   
+   
+    .Heading1 { 
+      
+        /* height: auto;  */
+   
+    } 
+   
+    .Heading1 .Wbar{ 
+      
+        display: none;
+   
+    } 
+   
+     .Heading1 .resTitle { 
+
+        /* display: none; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   
+    
+    }
+
+    .resTitle .barItem { 
+ 
+        display: flex;
+        align-items: center;
+    }
+
+    /* .Sidelist{ 
+        height: auto;
+    }
+     */
+    
+
+ 
+   
+    .SubHero{ 
+    
+        display: none; 
+       
+        /* align-items: center;  */
+
+    } 
+    
+    /* .Gallery {  
+        
+        display: none;
+         position: relative;
+         
+         padding-top: 20px;
+           
+    
+        
+         background-color: inherit;  
+        
+         column-count: 1;  
+         column-gap: 5px; 
+         border-top: 1px solid black;
+      
+      
+          
+        
+    }       */
+    
+    .Heading1 .Wbarinit {
+
+     /* position: relative;  
+    margin-top: 0;
+    padding-top: 0; 
+    margin-bottom: 0;
+    padding: 0; 
+    left: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    
+    width: 100%;    */
+
+    /* height: 40vh;   */
+    /* align-items: center; */
+    
+    /* z-index: 999;   */
+    display: none;
+    }  
+
+    .resBar{ 
+
+        /* background-color: red; */
+        margin-bottom: 0;
+        padding-bottom: 0;
+    } 
+    .sideContainer{
+        top: 0;
+        margin-top: 1px;
+        padding-top: 0;
+        margin-bottom: 0;
+        /* background-color: red; */
+    } 
+
+
+    /* .sideContainer  ul{
+        top: 0;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+      
+    }  */
+
+    /* .Sidelist{ 
+        margin-top: 0;
+        padding-top: 0;
+       
+
+    } */
+
+
+    
+
+
+#cancel-btn:checked ~ .resTitle  {
+    display: none;  
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center; */
+        
+      } 
+
+  #cancel-btn:checked ~ .Wbarinit {
+
+  
+    
+
+    position: relative;  
+    margin-top: 0;
+    padding-top: 0; 
+    margin-bottom: 0;
+    padding: 0; 
+    left: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    /* background-color: red; */
+    
+    width: 100%;  
+    
+  } 
+  #cancel-btn:checked ~ .Wbar {
+
+    display: none;
+
+  } 
+
+ 
+    
+    .Footer{
+    
+       
+        display: none; 
+        justify-content:start;
+        font-size:  40px; 
+        margin: 40px 60px; 
+        padding-bottom: 40px;
+    } 
+    
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+
+.services{  
+    position: relative;
+    margin-top: 15vh;
+    /* background-color: #888888; */ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    height: 70vh;
+} 
+
+
+.services .ServiceIcon{ 
+    
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 63px; 
+    color: #4C4C4C;
+    
+   
+}
+.services .ServiceIcon:hover { 
+    
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 63px; 
+    color: #4C4C4C;
+    text-shadow: rgba(0, 0,0, 424) 1.2px;
+    cursor: pointer;
+    
+   
+}
+
+
+
+.listing{ 
+    margin-top: 20vh;
+    padding: 10px; 
+  
+     width: 100%; 
+     
+     margin: 0 auto; 
+     padding: 50px 20px; 
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+     
+     /* grid-auto-rows: 700px;  */
+     grid-auto-flow: dense;
+     grid-gap: 20px;
+     
+} 
+
+.Service h3{ 
+
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 40.5px; 
+    color: #4C4C4C;
+}
+
+.Service p{ 
+
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 300;
+    /* letter-spacing: 3px; */
+    line-height: 30px;  
+    color: #4C4C4C;
+}

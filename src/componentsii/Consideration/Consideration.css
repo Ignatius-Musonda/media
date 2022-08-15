@@ -1,0 +1,84 @@
+
+
+.Consideration{
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+
+
+.consHead{ 
+   
+    position: relative;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;  
+    font-size: 30px;
+    color: #4C4C4C;
+    font-weight: 600; 
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    letter-spacing: 3PX;
+    
+} 
+/* 
+.ConsidList .ConsidListLi li{
+
+    list-style:circle; 
+    background-color: red;
+} */
+
+.ConsidList  li{
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 16px;
+    line-height: 23px;
+    width: 100%;
+    color: #4C4C4C;
+    list-style-type:circle;
+    padding-left: 50px;
+    /* background-color: red; */
+}
+
+.consIcons{  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    font-size: 25px;
+
+}
+.consIcons i{  
+    margin-right: 5px;
+
+} 
+
+
+
+  .consIcons .fab.fa-facebook{  
+    color: rgb(22, 94, 239);
+
+}  
+
+.consIcons .fab.fa-twitter {  
+    color: rgb(28, 135, 236);
+
+}  
+
+
+.consIcons .far.fa-envelope{  
+    color: rgb(7, 73, 255);
+
+} 
+
+.consIcons .fab.fa-whatsapp{  
+    color: rgb(27, 165, 12);
+
+}  
+
+.consIcons .fab.fa-linkedin {  
+    color: rgb(13, 102, 166);
+
+}  
+
+.consIcons .fas.fa-plus-circle {  
+    color: rgb(7, 73, 255);
+
+} 

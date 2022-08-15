@@ -1,0 +1,22 @@
+*{
+
+    box-sizing: border-box;
+}
+.Copyright{
+      display: flex; 
+      justify-content: space-around;
+      padding: 30px 15px;
+      color: #ffffff;
+      background-color: #222222;
+}
+
+
+.Copyright p{ 
+
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 30px;  
+    
+}

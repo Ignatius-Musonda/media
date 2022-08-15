@@ -1,0 +1,340 @@
+
+
+.Virtue{ 
+    box-sizing: border-box; 
+    
+    /* padding: 0;  */
+
+         
+    /* margin: 0 auto; 
+    padding: 50px 20px;  */
+
+    position: relative;
+    height: 70vh; 
+    background-color: #f8f6f5;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
+    column-gap: 15px;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}  
+.Virtue .Virtues{
+    
+     display: flex;
+     flex-direction: column; 
+     justify-content: center;
+     
+} 
+
+.subHeading{ 
+
+    display: flex; 
+    justify-content: space-between;
+}
+
+.PhylState { 
+    
+     /* background-color: cadetblue;  */
+     font-family: 'Josefin Sans', sans-serif; 
+     font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 25.5.5px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-top: 2px;
+    
+        transition: 8s ease-in-out;
+    
+  
+}  
+.PhylState:hover { 
+    
+    /* background-color: cadetblue;  */
+    /* font-family: 'Josefin Sans', sans-serif; 
+   font-size: 17px;
+   font-weight: 700;
+   letter-spacing: 2px;
+   line-height: 25.5.5px; */
+   border-bottom: 1px solid black;
+}  
+  
+   
+
+.PhylState .minusSign{ 
+    
+    display: none;
+} 
+
+.VText{  
+
+    /* display: contents; */
+    /* max-height: 0px;
+    min-height: 0px;
+    transition: height 0.35s ease-out;
+    overflow:hidden;
+    position:relative;
+     */
+    /* display: none; 
+    transition: 7s ease-in-out; */
+    /* height: 0;
+    opacity: 0; */
+    
+}
+
+
+.PhylState .VText{  
+
+    /* display: contents; */
+    max-height: 0px;
+    min-height: 0;
+    /* min-height: 0px; */
+    transition: max-height 0.5s ease-in-out;
+    overflow:hidden;
+    position:relative;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;  
+    color: #4C4C4C;
+    
+    /* display: none; 
+    transition: 7s ease-in-out; */
+    /* height: 0;
+    opacity: 0; */
+    
+}
+
+
+/* .ImageText h3{ 
+
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 40.5px; 
+    color: #4C4C4C;
+}
+
+.ImageText p{ 
+
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 300;
+   
+    line-height: 30px;  
+    color: #4C4C4C;
+}
+ */
+
+.PhylState.Active .VText{  
+    
+    /* transition: 2s ease-in-out;
+     height: fit-content;
+     opacity: 1; */
+/*     
+    display: contents;
+    transition: 3s ease-in-out;  */
+
+    max-height: 300px;
+  
+    min-height: 150px;
+    /* transition: max-height 0.35s ease; */
+    transition: min-height 0.35s ease-in-out;
+     overflow:hidden;
+     position:relative;
+     display: contents;
+
+
+} 
+
+
+/* .PhylState.Active { 
+    transition: 12s ease-in-out;
+    background-color: brown;
+}   */
+
+ 
+.PhylState.Active .minusSign{ 
+
+    display: contents;
+}  
+.PhylState.Active .plusSign{ 
+
+    display: none;
+}  
+
+
+
+
+.Consist{ 
+    
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 25.5.5px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-top: 2px;
+} 
+
+.Consist .VText{  
+
+    /* display: contents; */
+    max-height: 0px;
+    min-height: 0;
+    /* min-height: 0px; */
+    transition: max-height 0.5s ease-in-out;
+    overflow:hidden;
+    position:relative;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;  
+    color: #4C4C4C;
+    
+    /* display: none; 
+    transition: 7s ease-in-out; */
+    /* height: 0;
+    opacity: 0; */
+    
+}
+
+
+
+
+.Consist .minusSign{ 
+   display: none;
+}
+/* .Consist.Active{  
+    background-color: crimson;
+
+}  */
+
+.Consist.Active .VText{  
+    
+    /* transition: 2s ease-in-out;
+     height: fit-content;
+     opacity: 1; */
+/*     
+    display: contents;
+    transition: 3s ease-in-out;  */
+
+    max-height: 300px;
+  
+    min-height: 150px;
+    /* transition: max-height 0.35s ease; */
+    transition: min-height 0.35s ease-in-out;
+     overflow:hidden;
+     position:relative;
+     display: contents;
+
+
+} 
+
+
+.Consist.Active .minusSign{  
+    display: contents;
+
+} 
+
+.Consist.Active .plusSign{  
+    display: none;
+
+} 
+
+
+.Creative {
+
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 25.5.5px;
+    border-bottom: 1px solid #DDDDDD;
+    padding-top: 2px;
+}  
+
+
+    
+.Creative .minusSign{
+
+   display: none;
+   transition: 400ms ease-in-out;
+}
+
+.Creative .VText{  
+
+    /* display: contents; */
+    max-height: 0px;
+    min-height: 0;
+    /* min-height: 0px; */
+    transition: max-height 0.5s ease-in-out;
+    overflow:hidden;
+    position:relative;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 19px;  
+    color: #4C4C4C;
+    
+    /* display: none; 
+    transition: 7s ease-in-out; */
+    /* height: 0;
+    opacity: 0; */
+    
+}
+
+
+/* .Creative.Active{ 
+     background-color: darkgrey;
+     transition: 800ms ease-in-out;
+
+} */
+
+
+.Creative.Active .VText{  
+    
+    /* transition: 2s ease-in-out;
+     height: fit-content;
+     opacity: 1; */
+/*     
+    display: contents;
+    transition: 3s ease-in-out;  */
+
+    max-height: 300px;
+  
+    min-height: 150px;
+    /* transition: max-height 0.35s ease; */
+    transition: min-height 0.35s ease-in-out;
+     overflow:hidden;
+     position:relative;
+     display: contents;
+
+
+} 
+
+
+.Creative.Active .minusSign{ 
+    display: contents;
+
+}
+
+.Creative.Active .plusSign{ 
+    display: none;
+    transition: 400ms ease-in-out;
+
+}
+
+.vitueImage img{
+    object-fit: cover; 
+    overflow: hidden; 
+    width: 100%;
+    min-height: 320px;
+   
+}

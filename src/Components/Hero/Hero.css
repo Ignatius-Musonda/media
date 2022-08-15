@@ -1,0 +1,250 @@
+
+*{ 
+
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.slider { 
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #f8f6f5;
+  
+  margin-left: 0;
+  height: 600px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-around;
+  align-items: center; */
+}  
+
+.right-arrow {
+
+
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 95%; 
+
+}
+
+
+.right-arrow i{
+
+  width: 100%;
+  height: 100%;
+  
+  /* -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%; */
+
+
+  font-size: 4rem;
+  color: #ffffff;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  right: 95%; 
+
+}
+
+.left-arrow i{
+  /* position: absolute;
+  top: 50%;
+  left: 32px; */
+  font-size: 4rem;
+  color: #ffffff;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+} 
+
+
+.SldImg{ 
+   
+    position: relative; 
+    width: 100%;
+    top:50px;
+    display: flex; 
+    justify-content:center;
+    /* overflow: hidden;  */
+    align-items: center;
+   
+
+}
+ 
+ 
+ 
+
+/* .slid{
+
+    display: flex;
+
+    
+
+} */
+
+
+
+.scrolImgs .image{
+
+  width: 290px;
+  height: 400px; 
+  object-fit: cover; 
+  overflow: hidden;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+  transition: 2s ease-in-out;
+}
+
+
+
+.scrolImgz .image.active{ 
+
+  width: 700px;
+  height: 500px;  
+  z-index: 5;
+  overflow: hidden;
+  object-fit: cover;
+  opacity: 1;
+  border-radius: 2px;
+  /* transition: height 8s ease-in-out; */
+  transform: scale(1); 
+  animation: fader 2s ease-in-out;   
+
+  /* animation-delay: 2s; */
+  /* animation-duration: 0.5s; */
+
+
+}   
+
+.scrolImgs .image{
+
+  width: 290px;
+  height: 400px; 
+  object-fit: cover; 
+  overflow: hidden;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 2s ease-in-out;
+  /* animation: faderRight 2s ease-in-out;   */
+}
+
+
+
+
+.slider img {
+  
+  
+  /* margin-left: 10px;
+  margin-right: 0px; */
+  /* width: 400px; 
+  object-fit: cover; 
+  overflow: hidden;
+   */
+}
+
+
+
+@keyframes fader { 
+  from , to {
+      transform: translateY(-10px); 
+      opacity: 0.7;
+      
+  
+  }
+  to {
+    
+    transform: translateY(0);
+    opacity: 1;
+  }
+     
+  
+} 
+
+/* @keyframes faderLeft { 
+  from {
+      transform: translateY(10px);
+      
+  
+  }
+  to {
+
+    transform: translateY(0);
+  }
+     
+  
+} */
+
+@keyframes faderRight { 
+  from {
+      transform: translateX(40px);
+      /* height: 300px; */
+  
+  }
+  to {
+    /* height: 500px; */
+    transform: translateX(0);
+  }
+     
+  
+}
+
+
+
+@media screen and (max-width: 600px){  
+
+  .scrolImgs .image{
+
+      display: none;
+   
+  }  
+
+
+  .scrolImgz .image.active{ 
+
+    width: 100%;
+   
+  
+  
+  }   
+  
+
+  
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
