@@ -74,6 +74,7 @@ function Column() {
   const Blog = [
 
     {
+        // "BID" : 1,
         "BHeading" : "WHY IS WEDDING PHOTOGRAPHY SO EXPENSIVE?",
         "BDate": <p>FEBRUARY 12, 2020</p>,
         "Image1" :img1,
@@ -88,6 +89,7 @@ function Column() {
     }, 
     
 //     {
+// "BID" : 2,
 //       "BHeading" : "HOW I PREPARE FOR MY WEDDING DAY",
 //       "BDate": <p>FEBRUARY 12, 2020</p>,
 //       "Image1" :img1,
@@ -101,6 +103,7 @@ function Column() {
 
 //   },
 //   {
+// "BID" : 3,
 //     "BHeading" : "WHY IS WEDDING PHOTOGRAPHY SO EXPENSIVE?",
 //     "BDate": <p>FEBRUARY 12, 2020</p>,
 //     "Image1" :img1,
@@ -114,6 +117,7 @@ function Column() {
 
 // }, 
 // {
+// "BID" : 4,
 //   "BHeading" : "WHY YOU NEED A PRE-WEDDING SESSION",
 //   "BDate": <p>FEBRUARY 12, 2020</p>,
 //   "Image1" :img1,
@@ -127,6 +131,7 @@ function Column() {
 
 // }, 
 // {
+// "BID" : 5,
 //   "BHeading" : "TIPS FOR A BEAUTIFUL WEDDING",
 //   "BDate": <p>FEBRUARY 12, 2020</p>,
 //   "Image1" :img1,

@@ -1,7 +1,7 @@
 
 // import {Route,BrowserRouter as Router, Switch} from 'react-router-dom'; 
 import {Routes,Route,Navigate} from 'react-router-dom'
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 // import img from 'media/src/Assets/Guat-10.jpeg'
 // import img9 from '../Images/Guat-10.jpeg'
 
@@ -16,7 +16,7 @@ import ContactP from '../src/Pages/ContactP/ContactP'
 function App() {
   return ( 
     
-        <BrowserRouter>
+        <Router>
 
           <Routes>  
 
@@ -28,7 +28,7 @@ function App() {
 
           </Routes> 
 
-        </BrowserRouter>
+        </Router>
   
   );
 }
