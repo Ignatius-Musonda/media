@@ -50,9 +50,9 @@
 } 
 
 
-.right-arrow h3{
+.QuoteOver .right-arrow h3{
     position: absolute;
-    top: 40%;
+    top: 0;
     right: 150px;
     font-family: 'Josefin Sans', sans-serif; 
     font-size: 17px;
@@ -60,6 +60,7 @@
     letter-spacing: 3px;
     line-height: 40.5px;
     border-left: solid 1px #888888;
+    /* padding-left: 7px; */
     /* color: #ffffff; */ 
     color: #4c4c4c;
     z-index: 10;
@@ -67,9 +68,9 @@
     user-select: none;
   }
   
- .left-arrow h3{
+ .QuoteOver .left-arrow h3{
     position: absolute;
-    top: 40%;
+    top: 0;
     left: 32px;
     left: 150px;
     font-family: 'Josefin Sans', sans-serif; 
@@ -78,6 +79,7 @@
     letter-spacing: 3px;
     line-height: 40.5px;
     border-right:  solid 1px #888888;
+    /* background-color: red; */
 
     /* color: #ffffff; */
    color: #4c4c4c;
@@ -85,4 +87,54 @@
     cursor: pointer;
     user-select: none;
   }
+
+
+  @media screen and (max-width: 600px){  
+
+    .QuoteOver .right-arrow h3{
+        position: absolute;
+        top: 40%;
+        right: 150px;
+        font-family: 'Josefin Sans', sans-serif; 
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        line-height: 40.5px;
+        border-left: solid 1px #888888;
+        /* color: #ffffff; */ 
+        color: #4c4c4c;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+        /* background-color: red; */
+      }
+
+      .QuoteOver .left-arrow h3{
+        position: absolute;
+        top: 40%;
+        left: 32px;
+        left: 150px;
+        font-family: 'Josefin Sans', sans-serif; 
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        line-height: 40.5px;
+        border-right:  solid 1px #888888;
+        /* background-color: red; */
+    
+        /* color: #ffffff; */
+       color: #4c4c4c;
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+      }
+    
+
+    
+  
+    
+    
+  
+  }
+  
   

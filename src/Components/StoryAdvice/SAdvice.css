@@ -111,6 +111,7 @@
     transition: all 0.3s ease-out;
     border-radius: 5px;
     margin-bottom: 3px;
+    cursor: pointer;
 }
 
 .moreButton:hover { 

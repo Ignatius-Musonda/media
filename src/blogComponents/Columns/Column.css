@@ -12,7 +12,7 @@
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
  /* .rightColumns{
@@ -35,7 +35,9 @@
     padding-right: 50px;
     margin-bottom: 30px;
     height: 164px;
-
+    cursor: pointer;
+    /* background-color: red; */
+    z-index: 99;
 }
 
 .recentPost{ 
@@ -47,6 +49,8 @@
     padding-right: 50px;
     margin-bottom: 30px;
     height: 432px;
+    /* background-color: red; */
+    z-index: 99;
 
 }
 

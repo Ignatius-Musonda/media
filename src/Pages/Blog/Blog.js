@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Blog.css' 
 import NavBar2 from '../../Components/NavBar2/HeadingOne' 
 import Column from '../../blogComponents/Columns/Column'
-import Footer from '../../Components/Footer/Footer'
+import Footer from '../../Components/Footer/Footer' 
+// import  { useEffect, useState } from 'react'
+import { useNavigate, useParams } from 'react-router';
 
-function Blog() {
+function Blog() { 
+
+  let {BID} = useParams();
+
+  const [bid, setBid] = useState(BID !=undefined?BID:1);
+
+ 
   return (
     <div> 
         <NavBar2/>
-        <Column/>
+        <Column bIDProp={bid}/>
         <Footer/>
 
     </div>

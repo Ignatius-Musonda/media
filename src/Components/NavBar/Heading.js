@@ -15,7 +15,8 @@ function Heading() {
           
           <div className="barItem"> 
                
-               <h3 className="NavItemi">Mosh</h3>
+               <div className="NavItemi"><Link className='text-link' to="/">Mosh</Link> </div>  
+               {/* <h3 className="NavItemi">Mosh</h3> */}
                <h3 className="NavItem">Photography |</h3> 
                <h3 className="NavItem">Creative</h3>
    
@@ -59,17 +60,17 @@ function Heading() {
                  
 
                                   <li className="ListItem"><Link className='text-link' to="/">HOME</Link> </li>
-                                  <li className="ListItem"><Link className='text-link' to="ContactP">ABOUT</Link></li>
+                                  <li className="ListItem"><Link className='text-link' to="/ContactP">ABOUT</Link></li>
                             
                                   <li><Link className='text-link' to="/pricing">Pricing</Link></li>
                                   {/* <li><Link className='text-link' to="pricing">PHOTO SESSIONS</Link></li> */}
 
                   
-                                  <li><Link className='text-link' to="portfolio">Portfolio</Link></li>
+                                  <li><Link className='text-link' to="/portfolio">Portfolio</Link></li>
                                   {/* <li><Link className='text-link' to="portfolio">OTHER</Link></li> */}
 
-                                
-                                  <li className="ListItem"> <Link className='text-link' to="ContactP">CONTACT</Link></li>
+                                  <li className="ListItem"> <Link className='text-link' to="/Blog/1">BLOG</Link></li>
+                                  <li className="ListItem"> <Link className='text-link' to="/ContactP">CONTACT</Link></li>
                                   <li className="ListItem"> <i class="fab fa-opencart"></i></li>
                       
 
@@ -102,7 +103,7 @@ function Heading() {
                         <li className="ListItem">PRICING 
                                       <ul className='Drop-down'> 
                                          <li><Link className='text-link' to="/pricing">WEDDING</Link></li>
-                                         <li><Link className='text-link' to="pricing">PHOTO SESSIONS</Link></li>
+                                         <li><Link className='text-link' to="/pricing">PHOTO SESSIONS</Link></li>
 
                                       </ul>
                         </li>
@@ -115,6 +116,7 @@ function Heading() {
                                       </ul>
                         
                         </li>
+                        <li className="ListItem"> <Link className='text-link' to="/Blog/1">BLOG</Link></li>
                         <li className="ListItem"> <Link className='text-link' to="/ContactP">CONTACT</Link></li>
                         <li className="ListItem"> <i class="fab fa-opencart"></i></li>
                         {/* component={Link} to={'/first'} */}

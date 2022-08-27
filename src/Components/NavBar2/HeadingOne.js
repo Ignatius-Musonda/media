@@ -19,7 +19,8 @@ function Heading1() {
                   
                   <div className="barItem"> 
                       
-                      <h3 className="NavItemi">Mosh</h3>
+                      <div className="NavItemi"><Link className='text-link' to="/">Mosh</Link> </div>  
+                      {/* <h3 className="NavItemi">Mosh</h3> */}
                       <h3 className="NavItem">Photography |</h3> 
                       <h3 className="NavItem">Creative</h3>
           
@@ -40,8 +41,9 @@ function Heading1() {
       <div className="resBar" >  
 
         <div className="barItem"> 
-            
-              <h3 className="NavItemi">Mosh</h3>
+
+              <div className="NavItemi"><Link className='text-link' to="/">Mosh</Link> </div>   
+              {/* <h3 className="NavItemi">Mosh</h3> */}
               <h3 className="NavItem">Photography |</h3> 
               <h3 className="NavItem">Creative</h3>
 
@@ -62,9 +64,10 @@ function Heading1() {
                                   <li className="ListItem"><Link className='text-link' to="/">HOME</Link> </li>
                                   <li className="ListItem"><Link className='text-link' to="/ContactP">ABOUT</Link></li>                  
                                   <li className="ListItem"><Link className='text-link' to="/pricing">PRICING</Link></li>                                         
-                                  <li className="ListItem"><Link className='text-link' to="/portfolio">PORTFORLIO</Link></li>                                                           
-                                  <li className="ListItem"> <Link className='text-link' to="ContactP">CONTACT</Link></li>
-                                  <li className="ListItem"> <i class="fab fa-opencart"></i></li>
+                                  <li className="ListItem"><Link className='text-link' to="/portfolio">PORTFORLIO</Link></li>  
+                                  <li className="ListItem"><Link className='text-link' to="/Blog/1">BLOG</Link></li>                                                         
+                                  <li className="ListItem"><Link className='text-link' to="/ContactP">CONTACT</Link></li>
+                                  <li className="ListItem"><i class="fab fa-opencart"></i></li>
                       
 
               </ul> 
@@ -98,7 +101,7 @@ function Heading1() {
                             <li className="ListItem">PRICING 
                                           <ul className='Drop-down'> 
                                              <li><Link className='text-link' to="/pricing">WEDDING</Link></li>
-                                             <li><Link className='text-link' to="pricing">PHOTO SESSIONS</Link></li>
+                                             <li><Link className='text-link' to="/pricing">PHOTO SESSIONS</Link></li>
 
                                           </ul>
                             </li>
@@ -111,6 +114,7 @@ function Heading1() {
                                           </ul>
                             
                             </li>
+                            <li className="ListItem"> <Link className='text-link' to="/Blog/1">BLOG</Link></li>
                             <li className="ListItem"> <Link className='text-link' to="/ContactP">CONTACT</Link></li>
                             <li className="ListItem"> <i class="fab fa-opencart"></i></li>
                             {/* component={Link} to={'/first'} */}
