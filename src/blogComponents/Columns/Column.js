@@ -324,7 +324,7 @@ function Column(props) {
                                 </div>  
 
                                 <div className='nextPImage'  onClick={e =>handleRed(e,item.BID)}> 
-                                    <p>PREVIOUS POST</p>
+                                    <p>NEXT POST</p>
                                     <h3>{item.BHeading}</h3>
 
                                 </div>  

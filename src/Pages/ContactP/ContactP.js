@@ -1,9 +1,9 @@
-import React,{useState}  from 'react' 
+import React,{useState,useMemo} from 'react' 
 import Form from '../../Components/Form/Form'
 import NavBar2 from "../../Components/NavBar2/HeadingOne"
 import './ContactP.css' 
 // import {GoogleMap,withScriptjs, withGoogleMap,Marker,InfoWindow} from "react-google-maps"; 
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker, useLoadScript } from '@react-google-maps/api';
 
 
 
@@ -65,10 +65,18 @@ function Map(){
 
 } 
 
+const {isLoaded} = useLoadScript(
+  // {googleMapsApiKey :"*"}
+  {googleMapsApiKey :"AIzaSyDx17VVSaHPNyYBF6Cb9MkXbYa3SZdfVr0"}
+)
+
+const  centered = useMemo(()=>({lat:12, lng: 12}),[])
+
 // const WrappedMap = withScriptjs(withGoogleMap(Map));
 
+if(!isLoaded) return <div> Map Loading.. </div>
 
-  return (
+  return (   
     <> 
         <div className='wholeNav'>
               <div className='responseNav'> 
@@ -79,14 +87,26 @@ function Map(){
          
              <div className='Map'> 
                     
-                     <h1>Heading</h1>
+                     {/* <h1>Heading</h1> */}
                      {/* <WrappedMap
                       withGoogleMapURL ="" 
                       loadingElement ={<div style={{height : "100%"}}/>}
                       containerElement ={<div style={{height : "100%"}}/>}
                       mapElement ={<div style={{height : "100%"}}/>}
 
-                      /> */}
+                      /> */} 
+
+                      <GoogleMap  
+
+                          zoom={10}
+                          center ={centered}
+                          mapContainerClassName ="mapConatainer"
+                      
+                      > 
+
+                      <Marker position={{lat:12, lng: 12}} />
+
+                      </GoogleMap>
 
              </div> 
 

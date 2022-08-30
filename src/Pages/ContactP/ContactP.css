@@ -27,6 +27,12 @@
     margin-top: 20px;
 } 
 
+.Map .mapConatainer{ 
+ 
+    height: 100%;
+    width: 100%;
+}
+
 .contDetails{ 
  
     width: 100%; 
