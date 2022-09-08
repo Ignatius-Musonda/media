@@ -11,6 +11,7 @@ import Pricing from './Pages/Pricing/Pricing';
 import Portfolio from './Pages/Portfolio/Portfolio'
 import Blog from './Pages/Blog/Blog';
 import ContactP from '../src/Pages/ContactP/ContactP'
+import AboutUs from './Pages/AboutUs/AboutUs'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route path='/Portfolio' element={<Portfolio/>} /> 
               <Route path='/Blog/:BID'  element={<Blog/>} /> 
               <Route path='/ContactP' element={<ContactP/>} />              
+              <Route path='/AboutUs' element={<AboutUs/>} />              
 
           </Routes> 
 

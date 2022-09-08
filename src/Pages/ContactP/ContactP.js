@@ -70,7 +70,7 @@ const {isLoaded} = useLoadScript(
   {googleMapsApiKey :"AIzaSyDx17VVSaHPNyYBF6Cb9MkXbYa3SZdfVr0"}
 )
 
-const  centered = useMemo(()=>({lat:12, lng: 12}),[])
+const  centered = useMemo(()=>({lat:12.47, lng: 28.12}),[])
 
 // const WrappedMap = withScriptjs(withGoogleMap(Map));
 
@@ -104,7 +104,7 @@ if(!isLoaded) return <div> Map Loading.. </div>
                       
                       > 
 
-                      <Marker position={{lat:12, lng: 12}} />
+                      <Marker position={{lat:12.47, lng: 28.12}} />
 
                       </GoogleMap>
 

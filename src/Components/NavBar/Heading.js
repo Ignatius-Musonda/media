@@ -99,7 +99,7 @@ function Heading() {
                 <ul className="TopList">  
                         
                         <li className="ListItem"><Link className='text-link' to="/">HOME</Link> </li>
-                        <li className="ListItem"><Link className='text-link' to="/ContactP">ABOUT</Link></li>
+                        <li className="ListItem"><Link className='text-link' to="/AboutUs">ABOUT</Link></li>
                         <li className="ListItem">PRICING 
                                       <ul className='Drop-down'> 
                                          <li><Link className='text-link' to="/pricing">WEDDING</Link></li>

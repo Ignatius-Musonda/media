@@ -1,0 +1,138 @@
+
+.aboutUs{  
+
+    width: 100%;
+    overflow: hidden;
+
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px; 
+   
+
+}
+
+
+.firstAbout{ 
+
+    width: 100%;
+    display: grid; 
+    
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    /* grid-gap: 20px; */
+    grid-auto-flow: dense;
+    overflow: hidden;
+} 
+.firstAbout img{ 
+
+      width: 100%;
+      object-fit: cover;
+      min-width: 300px;
+      min-height: 400px;
+
+}  
+
+.firstAbout .aboutWriteUp{ 
+    margin-top: 25px;
+    padding-top: 25px;
+    /* display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center; */
+     border-top: 0.5px solid #4C4C4C; ;
+} 
+
+.firstAbout p{ 
+    
+    font-family: 'Josefin Sans', sans-serif;  
+    font-size: 16px;
+    /* line-height: 18px; */
+    line-height: 25px;
+}
+
+.aboutSideColumn{ 
+    display: flex; 
+    flex-direction: column;
+    
+    margin-left: 20px;
+}
+
+.aboutIcons { 
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    padding-left: 50px;
+    font-size: 3rem;
+   
+} 
+.aboutIcons i { 
+
+   margin-right: 5px;
+   
+} 
+.aboutIcons i:hover { 
+
+  cursor: pointer;
+   
+} 
+
+
+
+
+
+.aboutIcons i { 
+
+    /* font-size: 16px;
+    
+    line-height: 25px; */
+
+    /* font-family: 'Josefin Sans', sans-serif; 
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 63px; 
+    color: #4C4C4C; */
+   
+     
+}
+
+.secondAbout{ 
+
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    border-top: 0.5px solid #4C4C4C; ;
+    border-bottom: 0.5px solid #4C4C4C; ;
+} 
+
+.secondAbout img{ 
+
+    width: 100%;
+    object-fit: cover;
+    min-width: 300px;
+    min-height: 400px;
+
+}  
+
+.secondAbout .aboutWriteUp{ 
+
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.secondAbout p{ 
+    
+    font-family: 'Josefin Sans', sans-serif;  
+    font-size: 16px;
+    /* line-height: 18px; */
+
+    line-height: 25px;
+    align-items: center;
+}

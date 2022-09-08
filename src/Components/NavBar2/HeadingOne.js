@@ -62,7 +62,7 @@ function Heading1() {
         <ul className="Sidelist">  
 
                                   <li className="ListItem"><Link className='text-link' to="/">HOME</Link> </li>
-                                  <li className="ListItem"><Link className='text-link' to="/ContactP">ABOUT</Link></li>                  
+                                  <li className="ListItem"><Link className='text-link' to="/AboutUs">ABOUT</Link></li>                  
                                   <li className="ListItem"><Link className='text-link' to="/pricing">PRICING</Link></li>                                         
                                   <li className="ListItem"><Link className='text-link' to="/portfolio">PORTFORLIO</Link></li>  
                                   <li className="ListItem"><Link className='text-link' to="/Blog/1">BLOG</Link></li>                                                         
