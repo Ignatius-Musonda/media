@@ -1,10 +1,13 @@
 import React from 'react';
 import './Team.css'
 
-import img1 from '../Images/slide-1.jpg' 
-import img2 from '../Images/slide-2.jpg'  
-import img3 from '../Images/slide-3.jpg' 
-import img9 from '../Images/slide-4.jpg' 
+// import img1 from '../Images/slide-1.jpg' 
+// import img2 from '../Images/slide-2.jpg'  
+// import img3 from '../Images/slide-3.jpg' 
+// import img9 from '../Images/slide-4.jpg' 
+import img1 from '../Images/Team/Team_2.jpg' 
+import img2 from '../Images/Team/Team_1.jpg' 
+import img3 from '../Images/Team/Team_3.jpg' 
 
 function Team() { 
 
@@ -19,12 +22,12 @@ function Team() {
    { 
       ImgUrl: img2,
       Name: "Ignatius Musonda", 
-      Title: "Programmer"
+      Title: "Assnt. Photographer"
 
    }, 
     { 
       ImgUrl: img3,
-      Name: "Mosh Media", 
+      Name: "Taonga Sakala", 
       Title: "Content Manager"
 
    }, 
@@ -53,7 +56,7 @@ function Team() {
             cardData.map((item,index)=>{ 
                 return( 
 
-                    <div className="CardHolder" key={index}> 
+                    <div className="CardHolderSec" key={index}> 
                     
                                     <div className="ImageHolder">
                                     <img src={item.ImgUrl}/> 
@@ -62,8 +65,12 @@ function Team() {
                                         
                                                 <div className="ImageTextz"> 
                                                 
-                                                <h2>hi</h2> 
-                                                <p> Hello</p>
+                                                      <i className="fab fa-facebook"></i>
+                                                      <i className="fab fa-twitter"></i>
+                                                      <i className="far fa-envelope"></i>
+                                                      <i className="fab fa-whatsapp"></i>
+                                                      <i className="fab fa-linkedin"></i>
+                                                      
 
                                                 </div>  
                                            

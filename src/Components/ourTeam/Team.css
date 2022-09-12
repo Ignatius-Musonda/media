@@ -7,7 +7,7 @@
 .MeetUs{ 
     position: relative;
     background-color: #f8f6f5;
-    height:100vh;
+    /* height:100vh; */
     /* display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));  */
     width:100%;
@@ -18,6 +18,7 @@
  
     display: flex; 
     flex-direction: column; 
+    justify-content: center;
     align-items: center; 
 
 
@@ -30,6 +31,7 @@
     padding: 50px 20px; 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    grid-auto-flow: dense;
     column-gap: 10px;
    
     /* width: 300px; */
@@ -37,7 +39,7 @@
 
 
 
-.CardHolder{ 
+.CardHolderSec{ 
 
     /* display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));  */
@@ -46,7 +48,9 @@
     /* display: flex;  */
     position: relative;
     width: 100%;
+    min-height: 400px;
 /* height: 300px; */
+    /* background-color: red; */
 }  
 
 .ImageHolder{ 
@@ -75,23 +79,39 @@
     right: 20px; 
     bottom: 20px;
     left: 20px; 
+    /* opacity: 1;
+    transform: all 0.4s ease; */
+
     opacity: 1;
-    transform: all 0.4s ease;
+    visibility: visible;
+    transform: all 0.4s 0.2s ease;
 
 }
 
-.CardHolder img{ 
+.CardHolderSec .ImageHolder img{ 
     width: 100%;  
-    min-height: 300px;
+    /* min-height: 300px; */
+    min-height: 200px;
+    max-height: 350px;
     object-fit: cover; 
     transition: 400ms ease-in-out;
+    overflow: hidden;
 }   
 
-.ImageText{ 
+.ImageTextz{ 
     display: flex;
     flex-direction: column; 
     justify-content: center; 
-    text-align: center; 
+    text-align: center;
+    min-height: 200px;
+    max-height: 230x;
+    
+    
+}
+
+.ImageTextz i{ 
+    font-size: 1.5rem;
+
 }
 
 .TContainer h3{ 
@@ -153,5 +173,6 @@
      bottom: 20px;
      left: 20px; 
      opacity: 1;
+     transform: all 0.4s 0.2s ease;
   
   } 

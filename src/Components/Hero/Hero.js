@@ -1,9 +1,16 @@
 import React , { useState, useEffect } from 'react'
 import './Hero.css' 
-import img1 from '../Images/slide-1.jpg' 
-import img2 from '../Images/slide-2.jpg'  
-import img3 from '../Images/slide-3.jpg' 
-import img9 from '../Images/slide-4.jpg' 
+// import img1 from '../Images/slide-1.jpg' 
+// import img2 from '../Images/slide-2.jpg'  
+// import img3 from '../Images/slide-3.jpg' 
+// import img9 from '../Images/slide-4.jpg' 
+import img1 from '../Images/Landing/BabyWelcome.jpg' 
+import img2 from '../Images/Landing/LandChilanga.jpg' 
+import img3 from '../Images/Landing/LandWed.jpg' 
+import img4 from '../Images/Landing/MoshFaceUp.jpg' 
+import img5 from '../Images/Landing/MoshWed2.jpg' 
+import img6 from '../Images/Landing/ZitWed.jpg' 
+import img7 from '../Images/Landing/MoshGrad.jpg' 
 
 
 
@@ -29,11 +36,19 @@ function Hero() {
     },
     {
       image:
-        img9
+        img4
     },
     {
       image:
-        img1
+        img5
+    },
+    {
+      image:
+        img6
+    },
+    {
+      image:
+        img7
     },
     
   ];

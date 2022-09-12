@@ -1,6 +1,8 @@
 import React from 'react'
 import './About.css'
-import img1 from '../Images/Guat-10.jpeg'
+import img1 from '../Images/Team/Team_2.jpg'
+import img2 from '../Images/Team/Team_1.jpg'
+
 
 function About() {
   return ( 
@@ -68,7 +70,7 @@ function About() {
 
                 <div className='aboutImage'>  
 
-                            <img src={img1} />
+                            <img src={img2} />
                 </div> 
 
                 <div className='aboutSideColumn'>  

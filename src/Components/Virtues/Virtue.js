@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Virtue.css' 
-import img9 from '../Images/slide-4.jpg' 
+
+import img1 from '../Images/Advice/Phylosophy.jpg' 
 
  
 
@@ -64,7 +65,7 @@ const consistHandler = ()=>{
         <div className='Virtues'>  
 
 
-        <div className={PhylState? "PhylState Active": "PhylState"} onClick={phylHandler}>  
+        <div className={PhylState ? "PhylState Active": "PhylState"} onClick={phylHandler}>  
 
                     <div className='subHeading'> 
                               <div className='headTitle'> 
@@ -143,7 +144,7 @@ const consistHandler = ()=>{
       
 
          <div className='vitueImage'> 
-                     <img src={img9} />
+                     <img src={img1} />
 
          </div>
       

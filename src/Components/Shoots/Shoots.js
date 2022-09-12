@@ -1,10 +1,16 @@
 import React from 'react';
 import './Shoots.css'
 
-import img1 from '../Images/slide-1.jpg' 
-import img2 from '../Images/slide-2.jpg'  
-import img3 from '../Images/slide-3.jpg' 
-import img9 from '../Images/slide-4.jpg' 
+// import img1 from '../Images/slide-1.jpg' 
+// import img2 from '../Images/slide-2.jpg'  
+// import img3 from '../Images/slide-3.jpg' 
+// import img9 from '../Images/slide-4.jpg' 
+import img1 from '../Images/Latest/Latest_1.jpg'
+import img2 from '../Images/Latest/Latest_2.jpg'
+import img3 from '../Images/Latest/Latest_3.jpg'
+import img4 from '../Images/Latest/Latest_7.jpg'
+import img5 from '../Images/Latest/Latest_5.jpg'
+import img6 from '../Images/Latest/Latest_6.jpg'
 
 const shootss = [ 
    
@@ -21,15 +27,15 @@ const shootss = [
         Names : "SOFT & BAE2"
     } ,
     { 
-        ImgUrl : img9, 
+        ImgUrl : img4, 
         Names : "SOFT & BAE3"
     } ,
     { 
-        ImgUrl : img1, 
+        ImgUrl : img5, 
         Names : "SOFT & BAE4"
     } ,
     { 
-        ImgUrl : img2, 
+        ImgUrl : img6, 
         Names : "SOFT & BAE5"
     } ,
      
@@ -58,7 +64,7 @@ function Shoots() {
                                 <img src={item.ImgUrl}  className='CardImage' />
                             </div>  
 
-                            <div className='clientName'> <h3>{item.Names}</h3></div> 
+                            {/* <div className='clientName'> <h3>{item.Names}</h3></div>  */}
 
                   </div> 
                 )

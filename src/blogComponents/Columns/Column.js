@@ -3,9 +3,20 @@ import React, { useEffect, useState } from 'react'
 import './Column.css'
 
 
-import img1 from '../../Components/Images/slide-1.jpg' 
-import img2 from '../../Components/Images/slide-2.jpg'  
-import img3 from '../../Components/Images/slide-3.jpg' 
+// import img1 from '../../Components/Images/slide-1.jpg' 
+// import img2 from '../../Components/Images/slide-2.jpg'  
+// import img3 from '../../Components/Images/slide-3.jpg' 
+import img1 from '../../Components/Images/Blog/WedTip1.jpg' 
+import img2 from '../../Components/Images/Blog/WedTip2.jpg' 
+import img3 from '../../Components/Images/Blog/PreWed1.jpg' 
+import img4 from '../../Components/Images/Blog/PreWed2.jpg' 
+import img5 from '../../Components/Images/Blog/Babyshower1.jpg' 
+import img6 from '../../Components/Images/Blog/Babyshower2.jpg' 
+import img7 from '../../Components/Images/Blog/Prep1.jpg' 
+import img8 from '../../Components/Images/Blog/Prep2.jpg' 
+import img9 from '../../Components/Images/Blog/Togetherness1.jpg' 
+import img10 from '../../Components/Images/Blog/Togetherness2.jpg' 
+
 
 function Column(props) {   
 
@@ -51,9 +62,9 @@ function Column(props) {
   const handleRed = (e,postID) => { 
        console.log("post ID",postID);  
        setCurrent(+postID); 
-       setPrevState(+postID == 1 ? Headings.length : +postID - 1); 
+       setPrevState(+postID == 1 ? Blog.length : +postID - 1); 
        
-       setnextState(postID== Headings.length ? +1 : +postID+1);  
+       setnextState(postID== Blog.length ? +1 : +postID+1);  
 
   }
 
@@ -66,41 +77,41 @@ function Column(props) {
 
 
 
-  const Headings = [ 
+  // const Headings = [ 
     
-      { 
-        "BHeading" : "WHY IS WEDDING PHOTOGRAPHY SO EXPENSIVE?",
-        "BID" : 1,
-      },
-      { 
-        "BHeading" : "HOW I PREPARE FOR MY WEDDING DAY",
+  //     { 
+  //       "BHeading" : "HOW I PREPARE FOR MY WEDDING DAY",
+  //       "BID" : 1,
+  //     },
+  //     { 
+  //       "BHeading" : "FREE BRIDAL SHOWER PHOTO GIVEAWAY",
         
-        "BID" : 2,
-      },
-      { 
-        "BHeading" : "WHY YOU NEED A PRE-WEDDING SESSION",
-        "BID" : 3,
-      },
-      { 
-        "BHeading" : "TIPS FOR A BEAUTIFUL WEDDING",
-        "BID" : 4,
-      },
-      { 
-        "BHeading" : "FREE BRIDAL SHOWER PHOTO GIVEAWAY",
-        "BID" : 5,
-      },
+  //       "BID" : 2,
+  //     },
+  //     { 
+  //       "BHeading" : "WHY IS WEDDING PHOTOGRAPHY SO EXPENSIVE?",
+  //       "BID" : 3,
+  //     },
+  //     { 
+  //       "BHeading" : "WHY YOU NEED A PRE-WEDDING SESSION",
+  //       "BID" : 4,
+  //     },
+  //     { 
+  //       "BHeading" : "TIPS FOR A BEAUTIFUL WEDDING",
+  //       "BID" : 5,
+  //     },
 
-  ]
+  // ]
 
   const Blog = [
 
     {
         "BID" : 1,
-        "BHeading" : "WHY IS WEDDING PHOTOGRAPHY SO EXPENSIVE?",
+        "BHeading" : "HOW I PREPARE FOR MY WEDDING DAY",
         "BDate": <p>FEBRUARY 12, 2020</p>,
-        "Image1" :img1,
+        "Image1" :img7,
         "BMiniHead" :<p>Considerations</p>, 
-        "Image2" :img2,
+        "Image2" :img8,
         "BContent" :<p>I won’t bore with you the profit and loss details, but basically Wedding Photography Prices are high because its very expensive to operate as a Professional photographer. Cameras, Lenses, lighting, memory cards, computers, software, insurance, advertising, office space and lets not forget the good old Tax man (Zambia Revenue Authority). In reality I probably don’t actually earn any more than other skilled tradesman like a carpenters or electricians, its all very relative. I strive to keep my costs down as much as possible in order to keep competitive whilst still operating a full time professional photography practice. I may be a little more expensive that some other Zambian Photographers but I’d say that my work has a creative edge ( personal trumpet blow right there ).</p>,
         "BImage3": img3, 
         "BContent2" : <p>I appreciate that Wedding photography is a big chunk of your wedding budget, but look at the investment when compared to longevity of other wedding services. Your Rings and photographs are all that’s left after the cake has been eaten and the hire suits returned. Thanks for listening and good luck finding a photographer ( I hope its me ).</p>,
@@ -111,11 +122,11 @@ function Column(props) {
     
     {
        "BID" : 2,
-      "BHeading" : "HOW I PREPARE FOR MY WEDDING DAY",
+      "BHeading" : "FREE BRIDAL SHOWER PHOTO GIVEAWAY",
       "BDate": <p>FEBRUARY 12, 2020</p>,
-      "Image1" :img1,
+      "Image1" :img9,
       "BMiniHead" :<p>Considerations</p>, 
-      "Image2" :img2,
+      "Image2" :img10,
       "BContent" :<p>I won’t bore with you the profit and loss details, but basically Wedding Photography Prices are high because its very expensive to operate as a Professional photographer. Cameras, Lenses, lighting, memory cards, computers, software, insurance, advertising, office space and lets not forget the good old Tax man (Zambia Revenue Authority). In reality I probably don’t actually earn any more than other skilled tradesman like a carpenters or electricians, its all very relative. I strive to keep my costs down as much as possible in order to keep competitive whilst still operating a full time professional photography practice. I may be a little more expensive that some other Zambian Photographers but I’d say that my work has a creative edge ( personal trumpet blow right there ).</p>,
       "BImage3": img3, 
       "BContent2" : <p>I appreciate that Wedding photography is a big chunk of your wedding budget, but look at the investment when compared to longevity of other wedding services. Your Rings and photographs are all that’s left after the cake has been eaten and the hire suits returned. Thanks for listening and good luck finding a photographer ( I hope its me ).</p>,
@@ -141,9 +152,9 @@ function Column(props) {
   "BID" : 4,
   "BHeading" : "WHY YOU NEED A PRE-WEDDING SESSION",
   "BDate": <p>FEBRUARY 12, 2020</p>,
-  "Image1" :img1,
+  "Image1" :img4,
   "BMiniHead" :<p>Considerations</p>, 
-  "Image2" :img2,
+  "Image2" :img5,
   "BContent" :<p>I won’t bore with you the profit and loss details, but basically Wedding Photography Prices are high because its very expensive to operate as a Professional photographer. Cameras, Lenses, lighting, memory cards, computers, software, insurance, advertising, office space and lets not forget the good old Tax man (Zambia Revenue Authority). In reality I probably don’t actually earn any more than other skilled tradesman like a carpenters or electricians, its all very relative. I strive to keep my costs down as much as possible in order to keep competitive whilst still operating a full time professional photography practice. I may be a little more expensive that some other Zambian Photographers but I’d say that my work has a creative edge ( personal trumpet blow right there ).</p>,
   "BImage3": img3, 
   "BContent2" : <p>I appreciate that Wedding photography is a big chunk of your wedding budget, but look at the investment when compared to longevity of other wedding services. Your Rings and photographs are all that’s left after the cake has been eaten and the hire suits returned. Thanks for listening and good luck finding a photographer ( I hope its me ).</p>,
@@ -170,9 +181,9 @@ function Column(props) {
   ]
 
   const [current, setCurrent] = useState(+props.bIDProp);
-  const [prevState,setPrevState] = useState(+props.bIDProp == 1 ? Headings.length : +props.bIDProp - 1); 
+  const [prevState,setPrevState] = useState(+props.bIDProp == 1 ? Blog.length : +props.bIDProp - 1); 
 
-  const [nextState,setnextState] = useState(props.bIDProp == Headings.length ? 1 : +props.bIDProp + 1);  
+  const [nextState,setnextState] = useState(props.bIDProp == Blog.length ? 1 : +props.bIDProp + 1);  
 
   
 
@@ -244,7 +255,7 @@ function Column(props) {
             
 
 
-       {  Headings.map((items, index)=>{
+       {  Blog.map((items, index)=>{
 
          return( 
            

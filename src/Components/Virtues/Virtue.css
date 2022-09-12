@@ -44,9 +44,8 @@
     letter-spacing: 2px;
     line-height: 25.5.5px;
     border-bottom: 1px solid #DDDDDD;
-    padding-top: 2px;
-    
-        transition: 8s ease-in-out;
+    padding-top: 2px;    
+    transition: 8s ease-in-out;
     
   
 }  
@@ -336,5 +335,6 @@
     overflow: hidden; 
     width: 100%;
     min-height: 320px;
+    max-height: 320px;
    
 }

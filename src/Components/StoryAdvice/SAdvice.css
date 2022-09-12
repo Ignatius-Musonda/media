@@ -77,6 +77,16 @@
     color: #4C4C4C;
 }
 
+.ImageHolderThird img{
+
+    width: 100%;
+    object-fit: cover;
+    min-height: 350px;
+    max-height: 350px;
+
+
+}
+
 
 .ImageText h1{ 
     /* line-height: 37.7px;  */  

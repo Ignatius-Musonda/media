@@ -1,10 +1,14 @@
 import React from 'react';
 import './SAdvice.css' 
 
-import img1 from '../Images/slide-1.jpg' 
-import img2 from '../Images/slide-2.jpg'  
-import img3 from '../Images/slide-3.jpg' 
-import img9 from '../Images/slide-4.jpg' 
+// import img1 from '../Images/slide-1.jpg' 
+// import img2 from '../Images/slide-2.jpg'  
+// import img3 from '../Images/slide-3.jpg' 
+// import img9 from '../Images/slide-4.jpg' 
+import img1 from '../Images/Advice/Advice_1.jpg' 
+import img2 from '../Images/Advice/Advice_4.jpg' 
+import img3 from '../Images/Advice/Advice_2.jpg' 
+import img4 from '../Images/Advice/Advice_3.jpg' 
 import {
   Routes,
   Route,
@@ -41,7 +45,7 @@ const shootss = [
    }, 
    { 
     BID: 4,
-    ImgUrl: img9,
+    ImgUrl: img4,
     Name: "why you need a pre-wedding session", 
     Title: "all your need to know Prewedding photo shoot is the photography service you get before your wedding. People who haven’t got the opportunity since then to be photographed by a professional photographer, this is considered to be best. Some of them consider this as golden opportunity to spend time with their future life partner, There …"
 
@@ -69,7 +73,7 @@ const shootss = [
                   return(
                          <div className="CardHolder" key={index}> 
                     
-                                    <div className="ImageHolder">
+                                    <div className="ImageHolderThird">
                                     <img src={item.ImgUrl}/> 
                                   
                                     </div>
