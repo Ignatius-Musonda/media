@@ -14,6 +14,17 @@ import img7 from '../../Components/Images/Portfolio/Wedding/Wed7.jpg'
 import img8 from '../../Components/Images/Portfolio/Wedding/Wed8.jpg' 
 import img9 from '../../Components/Images/Portfolio/Wedding/Wed9.jpg' 
 import img10 from '../../Components/Images/Portfolio/Wedding/Wed10.jpg' 
+import img11 from '../../Components/Images/Portfolio/Other/Other1.jpg' 
+import img12 from '../../Components/Images/Portfolio/Other/Other2.jpg' 
+import img13 from '../../Components/Images/Portfolio/Other/Other3.jpg' 
+import img14 from '../../Components/Images/Portfolio/Other/Other4.jpg' 
+import img15 from '../../Components/Images/Portfolio/Other/Other5.jpg' 
+import img16 from '../../Components/Images/Portfolio/Other/Other6.jpg' 
+import img17 from '../../Components/Images/Portfolio/Other/Other7.jpg' 
+import img18 from '../../Components/Images/Portfolio/Other/Other8.jpg' 
+import img19 from '../../Components/Images/Portfolio/Other/Other9.jpg' 
+import img20 from '../../Components/Images/Portfolio/Other/Other10.jpg' 
+import img21 from '../../Components/Images/Portfolio/Other/Other11.jpg' 
 
  
 
@@ -82,6 +93,39 @@ const Images = [
         {
             "imgUrl": img10
         }, 
+        {
+            "imgUrl": img11
+        }, 
+        {
+            "imgUrl": img12
+        }, 
+        {
+            "imgUrl": img13
+        }, 
+        {
+            "imgUrl": img14
+        }, 
+        {
+            "imgUrl": img15
+        }, 
+        {
+            "imgUrl": img16
+        }, 
+        {
+            "imgUrl": img17
+        }, 
+        {
+            "imgUrl": img18
+        }, 
+        {
+            "imgUrl": img19
+        }, 
+        {
+            "imgUrl": img20
+        }, 
+        {
+            "imgUrl": img21
+        }, 
 
 ]
 
@@ -92,7 +136,7 @@ function Work() {
     <div className='Work'>   
      
      <div className='SubHeading'> 
-             <h1>Weddings</h1>
+             <h1>Portfolio</h1>
          </div> 
 
     <div className='WGallery'>   
@@ -139,61 +183,6 @@ function Work() {
     </div> 
         
   </div>   
-
-
-  <div className='Work'>   
-     
-     <div className='SubHeading'> 
-             <h1>Other Sessions</h1>
-         </div> 
-
-    <div className='WGallery'>   
-
-        { Images.map(
-            (item,index) =>{ 
-            
-                return( 
-                    
-                    <div className='Cover'>  
-                            <div className='coupleWrap'> 
-                                                
-                                                {/* <div className='VertText'> 
-                                                    <h3>{item.Category}</h3>
-                                                </div>   */}
-                            
-                                                <div className='WImages'>  
-                            
-                                                        <img src={item.imgUrl} />
-                                                    
-                                                
-                                                </div>      
-                            
-                                    </div>  
-                            
-                                    
-                                    {/* <div className='GBride'> 
-                                        <h3>{item.Bride}</h3>
-                                    </div>   */}
-            
-
-                </div>  
-                )
-
-            }       
-
-        )}
-
-
-
-
-    
-      
-    </div> 
-        
-  </div>  
-    
-
-
 
 
 </>

@@ -3,8 +3,12 @@ import './Section.css'
 
 import img1 from '../../Components/Images/slide-1.jpg' 
 import img2 from '../../Components/Images/slide-2.jpg'  
-import img3 from '../../Components/Images/slide-3.jpg' 
+// import img3 from '../../Components/Images/slide-3.jpg' 
 import img9 from '../../Components/Images/slide-4.jpg' 
+import img3 from '../../Components/Images/Portfolio/Wedding/Wed1.jpg' 
+import img4 from '../../Components/Images/Latest/Latest_2.jpg'
+import img5 from '../../Components/Images/Advice/Advice_3.jpg'
+import img6 from '../../Components/Images/Portfolio/Other/Other8.jpg'
 
 
 function Section() {
@@ -19,7 +23,7 @@ function Section() {
        "pTag" : <p> Session takes up to an hour Images delivered on USB <br/> 25 to 30 High Res Images <br/> Online Gallery of Images on our website <br/> Up to 48 Hours delivery  PHOTOS ONLY </p>,
        "priceTag" : "PHOTOS ONLY",
        "Price" :"k2,000",
-       "imgUrl" : img1
+       "imgUrl" : img5
 
       
 
@@ -31,7 +35,7 @@ function Section() {
       "pTag" : <p>25 - 30 Images <br/> Images Delivered on USB <br/> Online Gallery of Images <br/>  48 Hour Delivery</p>,
       "priceTag" : "PHOTOS ONLY",
       "Price" :"k2,000",
-      "imgUrl" : img2
+      "imgUrl" : img6
 
      
 
@@ -45,7 +49,7 @@ function Section() {
   "pTag" : <p>25 - 30 Images <br/> Images Delivered on USB <br/> Online Gallery of Images <br/>  48 Hour Delivery</p>,
   "priceTag" : "PHOTOS ONLY",
   "Price" :"k2,000",
-  "imgUrl" : img3
+  "imgUrl" : img4
 
  
 
@@ -98,7 +102,7 @@ function Section() {
           </div>
 
           <div className='SectionImg'> 
-              <img src={img1} />
+              <img src={item.imgUrl} />
           </div>
 
        </div>

@@ -24,7 +24,8 @@ function Heading() {
    
          <div className="barItem"> 
             
-              <label for="cancel-btn" className="btn cancel-btn"> <i className="fas fa-times"></i></label>
+              {/* <label for="cancel-btn" className="btn cancel-btn"> <i className="fas fa-times"></i></label> */}
+              <label for="cancel-btn" className="btn cancel-btn"> <i class="fa-solid fa-bars"></i></label>
            
          </div>
    
@@ -60,13 +61,13 @@ function Heading() {
                  
 
                                   <li className="ListItem"><Link className='text-link' to="/">HOME</Link> </li>
-                                  <li className="ListItem"><Link className='text-link' to="/ContactP">ABOUT</Link></li>
+                                  <li className="ListItem"><Link className='text-link' to="/AboutUs">ABOUT</Link></li>
                             
-                                  <li><Link className='text-link' to="/pricing">Pricing</Link></li>
+                                  <li className="ListItem"><Link className='text-link' to="/pricing">PRICING</Link></li>
                                   {/* <li><Link className='text-link' to="pricing">PHOTO SESSIONS</Link></li> */}
 
                   
-                                  <li><Link className='text-link' to="/portfolio">Portfolio</Link></li>
+                                  <li className="ListItem"><Link className='text-link' to="/PortfolioTwo">PORTFOLIO</Link></li>
                                   {/* <li><Link className='text-link' to="portfolio">OTHER</Link></li> */}
 
                                   <li className="ListItem"> <Link className='text-link' to="/Blog/1">BLOG</Link></li>
@@ -111,7 +112,7 @@ function Heading() {
 
                                      <ul className='Drop-down'> 
                                          <li><Link className='text-link' to="/portfolio">WEDDING</Link></li>
-                                         <li><Link className='text-link' to="/portfolio">OTHER</Link></li>
+                                         <li><Link className='text-link' to="/PortfolioTwo">OTHER</Link></li>
 
                                       </ul>
                         

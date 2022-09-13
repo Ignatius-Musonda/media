@@ -64,7 +64,7 @@ function Heading1() {
                                   <li className="ListItem"><Link className='text-link' to="/">HOME</Link> </li>
                                   <li className="ListItem"><Link className='text-link' to="/AboutUs">ABOUT</Link></li>                  
                                   <li className="ListItem"><Link className='text-link' to="/pricing">PRICING</Link></li>                                         
-                                  <li className="ListItem"><Link className='text-link' to="/portfolio">PORTFORLIO</Link></li>  
+                                  <li className="ListItem"><Link className='text-link' to="/PortfolioTwo">PORTFORLIO</Link></li>  
                                   <li className="ListItem"><Link className='text-link' to="/Blog/1">BLOG</Link></li>                                                         
                                   <li className="ListItem"><Link className='text-link' to="/ContactP">CONTACT</Link></li>
                                   <li className="ListItem"><i class="fab fa-opencart"></i></li>
@@ -97,7 +97,7 @@ function Heading1() {
                 <ul className="TopList">  
                         
                             <li className="ListItem"><Link className='text-link' to="/">HOME</Link> </li>
-                            <li className="ListItem"><Link className='text-link' to="/ContactP">ABOUT</Link></li>
+                            <li className="ListItem"><Link className='text-link' to="/AboutUs">ABOUT</Link></li>
                             <li className="ListItem">PRICING 
                                           <ul className='Drop-down'> 
                                              <li><Link className='text-link' to="/pricing">WEDDING</Link></li>
@@ -109,7 +109,7 @@ function Heading1() {
 
                                          <ul className='Drop-down'> 
                                              <li><Link className='text-link' to="/portfolio">WEDDING</Link></li>
-                                             <li><Link className='text-link' to="/portfolio">OTHER</Link></li>
+                                             <li><Link className='text-link' to="/PortfolioTwo">OTHER</Link></li>
 
                                           </ul>
                             
