@@ -78,37 +78,43 @@ function Quote() {
 
           <div className='QuoteOver'> 
              
-          <div className='left-arrow' onClick={prevSlide} ><h3>PREV</h3> </div>
+          
+
+            <div> 
+
+            { 
+              Quotes.map((item,index)=>{ 
+
+                return(
+                    <div>
+                        { current=== index &&( <div className='Quote'>
+
+                        
+                                {item.text} ,
+                              {item.Author} 
+                        </div>
+                            
+                            
+                            
+                            )
+
+                        }
+
+                    </div> 
+                )
+
+              }
+              
+            
+            )}  
+
+            </div>
+            
+
+                 <div className='left-arrow' onClick={prevSlide} ><h3>PREV</h3> </div>
                  <div className='right-arrow' onClick={nextSlide} ><h3>NEXT</h3></div> 
 
 
-
-
-    { 
-       Quotes.map((item,index)=>{ 
-
-         return(
-             <div>
-                 { current=== index &&( <div className='Quote'>
-
-                
-                         {item.text} ,
-                       {item.Author} 
-                 </div>
-                     
-                     
-                    
-                    )
-
-                 }
-
-             </div> 
-         )
-
-       }
-       
-    
-    )}
     
     </div>   
     </>

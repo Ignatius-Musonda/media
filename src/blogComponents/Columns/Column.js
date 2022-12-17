@@ -60,7 +60,7 @@ function Column(props) {
   // };
 
   const handleRed = (e,postID) => { 
-       console.log("post ID",postID);  
+      //  console.log("post ID",postID);  
        setCurrent(+postID); 
        setPrevState(+postID == 1 ? Blog.length : +postID - 1); 
        

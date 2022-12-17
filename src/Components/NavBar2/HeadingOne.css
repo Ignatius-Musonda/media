@@ -190,6 +190,7 @@ input[type=checkbox]{
      .Heading1 .resTitle { 
 
         /* display: none; */
+        padding: 5px 17px;
         display: flex;
         justify-content: space-between;
         align-items: center;

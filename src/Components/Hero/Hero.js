@@ -79,7 +79,7 @@ function Hero() {
        
 
        setPrev(current === 0 ? length - 1 : current - 1);
-       console.log(prev);
+      //  console.log(prev);
        setNext(current === length - 1 ? 0 : current + 1);
     
   },[current]); 

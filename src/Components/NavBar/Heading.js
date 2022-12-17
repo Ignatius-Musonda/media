@@ -1,12 +1,38 @@
-import React from 'react'  
+import React, { useEffect } from 'react'  
 import {Routes,Route,Navigate,Link} from 'react-router-dom'
 import './Heading.css'
+import { useState } from 'react'
 
 
 function Heading() {
+
+  const [scrollState , setScrollState] = useState(false); 
+  let listener = null; 
+
+//changes NavBar after some scroll height
+  useEffect(()=>{
+     
+        listener = document.addEventListener('scroll',e =>{
+          var scrolled = document.scrollingElement.scrollTop; 
+          if(scrolled >=120){
+            if(scrollState !== true) setScrollState(true)
+          }else{
+            if(scrollState !== false) setScrollState(false)
+          }
+
+        }) 
+
+        return () =>{
+          document.removeEventListener('scroll',listener);
+        }
+
+  },[scrollState])
+
+
     return ( <>
          
-   <div  className='Heading'>   
+   <div  className="Heading">   
+   {/* <div  className={scrollState? "scrollCover" : "Heading"}>    */}
 
 
               <input type="checkbox" id="cancel-btn" /> 
@@ -16,15 +42,15 @@ function Heading() {
           <div className="barItem"> 
                
                <div className="NavItemi"><Link className='text-link' to="/">Mosh</Link> </div>  
-               {/* <h3 className="NavItemi">Mosh</h3> */}
-               <h3 className="NavItem">Photography |</h3> 
-               <h3 className="NavItem">Creative</h3>
+               <h3 className="NavItemi">Media</h3>
+               {/* <h3 className="NavItem">Photography |</h3> 
+               <h3 className="NavItem">Creative</h3> */}
    
          </div>
    
          <div className="barItem"> 
             
-              {/* <label for="cancel-btn" className="btn cancel-btn"> <i className="fas fa-times"></i></label> */}
+           
               <label for="cancel-btn" className="btn cancel-btn"> <i class="fa-solid fa-bars"></i></label>
            
          </div>
@@ -32,7 +58,7 @@ function Heading() {
           </div>
    
          
-
+       {/* Responsive Nav Bar */}
       <div className="Wbarinit">    
 
       <div className="resBar" >  
@@ -40,8 +66,9 @@ function Heading() {
         <div className="barItem"> 
             
               <h3 className="NavItemi">Mosh</h3>
-              <h3 className="NavItem">Photography |</h3> 
-              <h3 className="NavItem">Creative</h3>
+              <h3 className="NavItemi">Media</h3>
+              {/* <h3 className="NavItem">Photography |</h3> 
+              <h3 className="NavItem">Creative</h3> */}
 
         </div>
 
@@ -83,8 +110,9 @@ function Heading() {
 
 
         
-                    
-                <div className="Wbar">  
+             {/* Normal Bar        */}
+                {/* <div className="Wbar">   */}
+                 <div  className={scrollState? "scrollCover" : "Wbar"}>   
 
                                 
 
@@ -141,8 +169,14 @@ function Heading() {
 
                <div className='Overhead'>  
                   
-                          <h1> MOSH</h1>
-                        <h1> PHOTOGRAPHY</h1>
+                          
+                          <div className='firstOver'>
+                              <h1> MOSH</h1>
+                          </div>
+                          <div className='SecondOver'>
+                            <h1> PHOTOGRAPHY</h1>
+                          </div>
+                        
                         {/* <Link className='text-link' to="/ContactP">CONTACT</Link> */}
 
                </div>

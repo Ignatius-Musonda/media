@@ -38,13 +38,16 @@ input[type=checkbox]{
 }
 
 
+.scrollCover{
+
+}
 
 
 .Heading{ 
 
     position: relative; 
     width: 100%;
-    height: 60vh; 
+    /* height: 60vh;  */
     justify-content: center;  
     margin-top: 0;
     margin-bottom: 0; 
@@ -90,6 +93,23 @@ input[type=checkbox]{
     display: flex; 
     justify-content: space-between; 
     align-items: center;   
+    /* background-color: red; */
+   z-index: 99;
+  
+    
+} 
+.Heading .scrollCover {  
+    position: fixed; 
+    top: 0;  
+    left: 0; 
+    width: 100%; 
+    padding-top: 40px;
+    padding-bottom: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;   
+    /* background-color: #222222; */
+    background-color: #4c4c4c;
    z-index: 99;
   
     
@@ -221,6 +241,11 @@ input[type=checkbox]{
 }
 
 
+.Overhead{ 
+
+    padding-bottom: 20px;
+
+}
 
 
 .Overhead h1{ 
@@ -231,11 +256,26 @@ input[type=checkbox]{
    
 
 }
+.Overhead .SecondOver h1{ 
+    
+    font-family: 'Roboto', sans-serif; 
+    /* size: 900px; */
+    font-size: clamp(1.5rem, 5vw, 5rem);
+    /* font-size: 100px;  */
+    /* color: red; */
+   
+
+}
 
 
 @media screen and (max-width: 730px){  
 
     .Wbar{ 
+      
+        display: none;
+   
+    } 
+    .scrollCover{ 
       
         display: none;
    
@@ -257,6 +297,12 @@ input[type=checkbox]{
    
     } 
     
+    .Heading .scrollCover{ 
+      
+        display: none;
+   
+    } 
+    
 
     .resTitle .barItem { 
  
@@ -266,7 +312,7 @@ input[type=checkbox]{
     
     .Heading .resTitle { 
 
-       
+        padding: 5px 17px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -332,8 +378,9 @@ input[type=checkbox]{
             display: none;
     } 
 
-    .Wbarinit .resBar { 
-    width: 100%;
+    .Wbarinit .resBar {  
+        padding: 5px 17px;
+        width: 100%;
         display: flex; 
         justify-content: space-between;
     } 
@@ -350,7 +397,7 @@ input[type=checkbox]{
     justify-content:space-evenly; 
     min-height: 300px;
     align-items: center;
-     top: 65px;
+     /* top: 65px; */
      list-style: none;
 
 } 
@@ -389,7 +436,7 @@ input[type=checkbox]{
     align-items: center;
     
     width: 100%;  
-    height: 100vh;  
+    /* height: 100vh;   */
     align-items: center;
     /* align-items: center; */
     /* left: -100%; */
@@ -427,6 +474,15 @@ input[type=checkbox]{
   #cancel-btn:checked ~ .Overhead{
 
         display: flex;
+    }
+
+    #cancel-btn:checked ~ .Overhead .firstOver{
+
+        display: none;
+    }
+    #cancel-btn:checked ~ .Overhead .SecondOver{
+
+        display: none;
     }
 
  

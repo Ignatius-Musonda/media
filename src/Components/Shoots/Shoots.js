@@ -47,9 +47,16 @@ const shootss = [
 
 function Shoots() {
   return <div className='Shoots'>  
-  <div className='Head'>  
-          <h3>NEW STORIES</h3> 
-          <h1>LATEST PHOTOSHOOTS</h1>
+  <div className='HeaderStory'>  
+       
+        <div>
+              <h3>NEW STORIES</h3> 
+        </div>
+        <div>
+            <h1>LATEST PHOTOSHOOTS</h1>
+        </div>
+          
+          
 
   </div> 
 

@@ -6,19 +6,20 @@
 
 } 
 
-.Shoots .Head{ 
+.Shoots .HeaderStory{ 
 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
+    justify-content: space-around;
     padding-top: 50px;
 } 
 
-.Head h1{ 
+.HeaderStory h1{ 
     /* line-height: 37.7px;  */  
 
     font-family: 'Josefin Sans', sans-serif; 
-     font-size: 29px;  
+     font-size: 28px;
      font-weight:700;
      line-height: 37.7px; 
      letter-spacing: 3.77px;
@@ -26,7 +27,7 @@
 
    
 } 
-.Head h3{  
+.HeaHeaderStoryd h3{  
     
     font-family: 'Josefin Sans', sans-serif; 
      font-size: 12px; 
@@ -102,3 +103,24 @@
     transition: 400ms ease-in-out;
    
 }
+
+
+@media screen and (max-width: 600px){  
+
+
+    .HeaderStory h1{ 
+        /* line-height: 37.7px;  */  
+    
+        font-family: 'Josefin Sans', sans-serif; 
+         font-size: 18px;
+         font-weight:700;
+         line-height: 37.7px; 
+         letter-spacing: 3.77px;
+         color: #4c4c4c;
+    
+       
+    } 
+
+   
+  
+  }
