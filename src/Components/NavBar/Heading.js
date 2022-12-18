@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import {Routes,Route,Navigate,Link} from 'react-router-dom'
 import './Heading.css'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckSquare, faCoffee,faBars } from '@fortawesome/free-solid-svg-icons'
 
 
 function Heading() {
@@ -51,7 +53,8 @@ function Heading() {
          <div className="barItem"> 
             
            
-              <label for="cancel-btn" className="btn cancel-btn"> <i class="fa-solid fa-bars"></i></label>
+              {/* <label for="cancel-btn" className="btn cancel-btn"> <i class="fa-solid fa-bars"></i></label> */}
+              <label for="cancel-btn" className="btn cancel-btn"> <FontAwesomeIcon icon={faBars} /></label>
            
          </div>
    

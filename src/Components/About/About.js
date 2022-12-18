@@ -52,7 +52,7 @@ function About() {
                             <br/> 
 
                             <p>If you are looking to move on any projects or briefs, no matter how big or small, then don’t hesitate to reach out and we can create something special.</p>
-                            <p>Anyway…enough of the self importance - I’m just a Scottish guy ready to help you create magic 365 days!</p>
+                            <p>Anyway…enough of the self importance - I’m just a Zambian guy ready to help you create magic 365 days!</p>
                             <br/>
                             <p>Drop me a message,</p>
                             <br/>

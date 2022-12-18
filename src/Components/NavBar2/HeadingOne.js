@@ -1,6 +1,9 @@
 import React from 'react'  
 import { BrowserRouter } from 'react-router-dom'
 import {Routes,Route,Navigate,Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckSquare, faCoffee,faBars } from '@fortawesome/free-solid-svg-icons'
+
 // import './Heading.css'
 import './HeadingOne.css'
 // HeadingOne.css
@@ -28,9 +31,11 @@ function Heading1() {
           
                 <div className="barItem"> 
                     
-                      <label for="cancel-btn" className="btn cancel-btn"> <i class="fa-solid fa-bars"></i></label>
+                      {/* <label for="cancel-btn" className="btn cancel-btn"> <i class="fa-solid fa-bars">gg</i></label> */}
+                      <label for="cancel-btn" className="btn cancel-btn"> <FontAwesomeIcon icon={faBars} /></label>
                   
                 </div>
+             
           
           </div>
    

@@ -107,3 +107,16 @@
     padding-top: 5px;
    
 }
+
+
+@media screen and (max-width: 600px){  
+
+    .WGallery{ 
+        padding-left:  5px;
+        padding-right: 5px;
+    }
+    
+  
+    
+  
+  }
