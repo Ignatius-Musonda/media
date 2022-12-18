@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/media/static/css/main.c39ee9c6.css",
-    "main.js": "/media/static/js/main.188882aa.js",
+    "main.css": "/media/static/css/main.2a39ce8d.css",
+    "main.js": "/media/static/js/main.8a9eacbd.js",
     "static/js/787.2d0a99e4.chunk.js": "/media/static/js/787.2d0a99e4.chunk.js",
     "static/media/MoshFaceUp.jpg": "/media/static/media/MoshFaceUp.1c20c834e59569c1d0fd.jpg",
     "static/media/WedTip2.jpg": "/media/static/media/WedTip2.5b9cd25f8c1a402cdf30.jpg",
@@ -61,12 +61,12 @@
     "static/media/Wed4.jpg": "/media/static/media/Wed4.d4fbda98f403d2e3d540.jpg",
     "static/media/Team_2.jpg": "/media/static/media/Team_2.a291b6fd980d8f5b68db.jpg",
     "index.html": "/media/index.html",
-    "main.c39ee9c6.css.map": "/media/static/css/main.c39ee9c6.css.map",
-    "main.188882aa.js.map": "/media/static/js/main.188882aa.js.map",
+    "main.2a39ce8d.css.map": "/media/static/css/main.2a39ce8d.css.map",
+    "main.8a9eacbd.js.map": "/media/static/js/main.8a9eacbd.js.map",
     "787.2d0a99e4.chunk.js.map": "/media/static/js/787.2d0a99e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c39ee9c6.css",
-    "static/js/main.188882aa.js"
+    "static/css/main.2a39ce8d.css",
+    "static/js/main.8a9eacbd.js"
   ]
 }
