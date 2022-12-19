@@ -71,7 +71,7 @@ function Heading() {
               <h3 className="NavItemi">Mosh</h3>
               <h3 className="NavItemi">Media</h3>
               {/* <h3 className="NavItem">Photography |</h3> 
-              
+              <h3 className="NavItem">Creative</h3> */}
 
         </div>
 
