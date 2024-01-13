@@ -17,7 +17,7 @@ import img8 from '../../Components/Images/Blog/Prep2.jpg'
 import img9 from '../../Components/Images/Blog/Togetherness1.jpg' 
 import img10 from '../../Components/Images/Blog/Togetherness2.jpg' 
 
-// faahaah
+
 
 
 function Column(props) {   
@@ -28,6 +28,11 @@ function Column(props) {
 
 
   const nextPos = ()=>{ 
+
+      // setCurrent(current === length - 1 ? 0 : current + 1);
+  } 
+
+  const nextPos2 = ()=>{ 
 
       // setCurrent(current === length - 1 ? 0 : current + 1);
   } 
